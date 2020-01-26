@@ -1,4 +1,5 @@
 #!/bin/sh
+echo "This is untested for the time being and is not guaranteed to work, with that said,"
 echo "Beginning Process"
 # Install git
 sudo apt install git
@@ -19,9 +20,21 @@ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable ma
 sudo apt update
 sudo apt install brave-browser
 # Install NodeJS
-
+echo -n "Is this distro closer to Debian or Ubuntu? (1 = Debian/2 = Ubuntu)?"
+read answer
+if [ "$answer" != "${answer#[Yy]}" ] ;then
+    # Using Debian, as root
+curl -sL https://deb.nodesource.com/setup_13.x | bash -
+sudo apt-get install -y nodejs
+else
+    # Using Ubuntu
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+sudo apt-get install -y nodejs
+fi
+node --version
+npm --version
 # Install Electron (Requires Nodejs)
-
+npm install electron --save-dev
 # Install ReactNative (Requires Nodejs)
 
 # Install Redux (Requires Nodejs)
