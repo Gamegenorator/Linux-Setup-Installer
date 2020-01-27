@@ -24,12 +24,18 @@ echo -n "Is this distro closer to Debian or Ubuntu? (1 = Debian/2 = Ubuntu)?"
 read answer
 if [ "$answer" != "${answer#[Yy]}" ] ;then
     # Using Debian, as root
-curl -sL https://deb.nodesource.com/setup_13.x | bash -
+curl -sL https://deb.nodesource.com/setup_10.x | bash -
 sudo apt-get install -y nodejs
+sudo apt-get install gcc g++ make
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
 else
     # Using Ubuntu
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
+sudo apt-get install gcc g++ make
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
 fi
 node --version
 npm --version
