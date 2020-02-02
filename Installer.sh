@@ -23,14 +23,14 @@ sudo apt install brave-browser
 echo -n "Is this distro closer to Debian or Ubuntu? (1 = Debian/2 = Ubuntu)?"
 read answer
 if [ "$answer" != "${answer#[Yy]}" ] ;then
-    # Using Debian, as root
+# Using Debian, as root
 curl -sL https://deb.nodesource.com/setup_12.x | bash -
 sudo apt-get install -y nodejs
 sudo apt-get install gcc g++ make
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install yarn
 else
-    # Using Ubuntu
+# Using Ubuntu
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install gcc g++ make
