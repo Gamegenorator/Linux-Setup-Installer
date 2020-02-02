@@ -9,6 +9,8 @@ sudo apt install
 # Install git
 echo "Installing git"
 sudo apt install git
+# Installing Snap Packager (Required for some things like Bitwarden)
+sudo apt install snapd
 # Install neofetch
 echo "Installing Neofetch"
 sudo apt install neofetch
@@ -20,7 +22,7 @@ echo "Installing Evolution Email"
 sudo apt install evolution
 # Install Bitwarden Password Manager
 echo "Installing Bitwarden Password Manager"
-sudo apt install bitwarden
+sudo snap install bitwarden
 # Install KeePassXC Password Manager
 echo "Installing KeePassXC"
 sudo apt install keepassxc
@@ -50,10 +52,12 @@ npm install electron -g
 echo "Installing React-Native"
 npm install -g expo-cli
 # Install Redux (Requires Nodejs)
-
+npm install redux
+npm install react-redux
 # Cleanup
 echo "Cleanning Up..."
 sudo apt autoremove
 
 # Done
 echo "Done!"
+echo "We Hope this was useful for you, script created by Gamegenorator (https://Github.com/Gamegenorator)"
