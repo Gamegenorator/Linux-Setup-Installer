@@ -91,4 +91,5 @@ sudo apt autoremove
 
 # Done
 echo "Done!"
-echo "We Hope this was useful for you, script created by Gamegenorator (https://Github.com/Gamegenorator)"
+echo "We Hope this was useful for you!"
+echo "Script created by Gamegenorator (https://Github.com/Gamegenorator)"
