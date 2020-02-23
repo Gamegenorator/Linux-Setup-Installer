@@ -46,6 +46,16 @@ wget -O atom-amd64.deb https://github.com/atom/atom/releases/download/v1.44.0/at
 sudo dpkg -i atom-amd64.deb
 rm atom-amd64.deb
 cd ~/
+# Install Sublime Text & Merge
+echo "Preparing to install Sublime Text & Merge"
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt-get install apt-transport-https
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get update
+echo "Installing Sublime Text"
+sudo apt-get install sublime-text
+echo "Installing Sublime Merge"
+sudo apt-get install sublime-merge
 # Install Brave Browser
 echo "Installing the Brave Browser"
 sudo apt install apt-transport-https curl
