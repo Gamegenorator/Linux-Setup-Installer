@@ -26,6 +26,9 @@ sudo snap install bitwarden
 # Install KeePassXC Password Manager
 echo "Installing KeePassXC"
 sudo apt install keepassxc
+# Install BleachBit
+echo "Installing BleachBit"
+sudo apt install bleachbit
 # Install Brave Browser
 echo "Installing the Brave Browser"
 sudo apt install apt-transport-https curl
