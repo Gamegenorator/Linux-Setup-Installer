@@ -53,6 +53,7 @@ echo "Installing Electronjs"
 npm install electron -g
 # Install ReactNative (Requires Nodejs)
 echo "Installing React-Native"
+sudo npm i -g create-react-app
 npm install -g expo-cli
 # Install Redux (Requires Nodejs)
 npm install redux
