@@ -29,6 +29,23 @@ sudo apt install keepassxc
 # Install BleachBit
 echo "Installing BleachBit"
 sudo apt install bleachbit
+# Install Vim
+echo "Installing Vim"
+sudo apt install vim
+# Install VSCodium
+echo "Installing VSCodium"
+cd ~/Downloads
+wget -O codium_1.42.1-1581651960_amd64.deb https://github.com/VSCodium/vscodium/releases/download/1.42.1/codium_1.42.1-1581651960_amd64.deb
+sudo dpkg -i codium_1.42.1-1581651960_amd64.deb
+rm codium_1.42.1-1581651960_amd64.deb
+cd ~/
+# Install Atom Editor
+echo "Installing Atom Code Editor"
+cd ~/Downloads
+wget -O atom-amd64.deb https://github.com/atom/atom/releases/download/v1.44.0/atom-amd64.deb
+sudo dpkg -i atom-amd64.deb
+rm atom-amd64.deb
+cd ~/
 # Install Brave Browser
 echo "Installing the Brave Browser"
 sudo apt install apt-transport-https curl
