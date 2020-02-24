@@ -12,6 +12,7 @@ This is a simple installer script that I use when setting up a new Ubuntu Linux 
 - Bitwarden Password Manager
 - KeePassXC Password Manager
 - BleachBit Disk Cleanner
+- Typora
 - Vim Code Editor
 - VSCodium (Fork of VSCode)
 - Atom Code Editor
