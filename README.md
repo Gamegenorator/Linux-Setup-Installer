@@ -7,6 +7,7 @@ This is a simple installer script that I use when setting up a new Ubuntu Linux 
 - Git
 - Snap
 - Neofetch
+- cmatrix
 - Htop
 - Evolution Email Client
 - Bitwarden Password Manager
