@@ -13,7 +13,20 @@ sudo apt install git
 sudo apt install snapd
 # Install neofetch
 echo "Installing Neofetch"
-sudo apt install neofetch
+mkdir ~/.neofetch
+cd ~/.neofetch
+git clone https://github.com/dylanaraps/neofetch
+sudo make install
+cd ~/
+# Install cmatrix
+echo "Installing cmatrix"
+mkdir ~/.cmatrix
+cd ~/.cmatrix
+git clone https://github.com/abishekvashok/cmatrix.git
+autoreconf -i
+./configure
+make
+make install
 # Install Htop
 echo "Installing Htop"
 sudo apt install htop
