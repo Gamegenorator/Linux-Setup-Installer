@@ -11,13 +11,25 @@ echo "Installing git"
 sudo apt install git
 # Installing Snap Packager (Required for some things like Bitwarden)
 sudo apt install snapd
-# Install neofetch
+# Install neofetch (You could just run 'apt install neofetch' but the snap is out of date)
 echo "Installing Neofetch"
 mkdir ~/.neofetch
 cd ~/.neofetch
 git clone https://github.com/dylanaraps/neofetch
 sudo make install
 cd ~/
+neofetch -v
+# Install lolcat (You could just run "gem install lolcat" but this makes sure it's up to date)
+echo "Installing lolcat"
+mkdir ~/.lolcat
+cd .lolcat
+wget https://github.com/busyloop/lolcat/archive/master.zip
+unzip master.zip
+rm master.zip
+cd lolcat-master/bin
+gem install lolcat
+cd ~/
+lolcat --version
 # Install cmatrix
 echo "Installing cmatrix"
 mkdir ~/.cmatrix
