@@ -19,6 +19,7 @@ sudo make install
 cd ~/
 # Install lolcat
 echo "Installing lolcat"
+sudo apt install ruby
 sudo gem install lolcat
 # Install cmatrix
 echo "Installing cmatrix"
