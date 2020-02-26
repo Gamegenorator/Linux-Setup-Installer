@@ -17,6 +17,7 @@ Honestly, this script probably won't be of any use to you. But you do find anyth
 - Snap
 - Neofetch
 - lolcat
+  - ruby
 - cmatrix
 - Htop
 - Evolution Email Client
