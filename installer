@@ -33,9 +33,9 @@ sudo apt install
 # Install git
 echo "Installing git"
 sudo apt install git
-# Installing Snap Packager (Required for some things like Bitwarden)
+# Installing Snap Packager (Required for certain programs like Mailspring & Bitwarden)
 sudo apt install snapd
-# Install neofetch (You could just run 'apt install neofetch' but the snap is out of date)
+# Install neofetch (You could just run "apt install neofetch' but that repo's version is out of date")
 echo "Installing Neofetch"
 mkdir ~/.neofetch
 cd ~/.neofetch
@@ -58,10 +58,13 @@ make install
 # Install Htop
 echo "Installing Htop"
 sudo apt install htop
+# Install Mailspring Email Client (Requires Snap Packager)
+echo "Installing Mailspring Email Client"
+sudo snap install mailspring
 # Install Evolution Email Client
 echo "Installing Evolution Email"
 sudo apt install evolution
-# Install Bitwarden Password Manager
+# Install Bitwarden Password Manager (Requires Snap Packager)
 echo "Installing Bitwarden Password Manager"
 sudo snap install bitwarden
 # Install KeePassXC Password Manager
