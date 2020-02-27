@@ -70,6 +70,12 @@ sudo apt install keepassxc
 # Install BleachBit
 echo "Installing BleachBit"
 sudo apt install bleachbit
+# Install Blender
+echo Installing Blender
+sudo apt install blender
+# Install Kdenlive
+echo "Installing Kdenlive"
+sudo apt install kdenlive
 # Install Typora Markdown Editor
 echo "Installing Typora markdown editor"
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
