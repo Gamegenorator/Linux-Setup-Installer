@@ -20,10 +20,13 @@ Honestly, this script probably won't be of any use to you. But you do find anyth
   - ruby
 - cmatrix
 - Htop
+- Mailspring Email Client
 - Evolution Email Client
 - Bitwarden Password Manager
 - KeePassXC Password Manager
 - BleachBit Disk Cleaner
+- Blender (Animation tool)
+- Kdenlive
 - Typora
 - Vim Code Editor
 - VSCodium (Fork of VSCode)

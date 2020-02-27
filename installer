@@ -74,7 +74,7 @@ sudo apt install keepassxc
 echo "Installing BleachBit"
 sudo apt install bleachbit
 # Install Blender
-echo Installing Blender
+echo "Installing Blender"
 sudo apt install blender
 # Install Kdenlive
 echo "Installing Kdenlive"
