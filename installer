@@ -127,6 +127,7 @@ sudo apt-get install gcc g++ make
 sudo npm install -g
 node --version
 npm --version
+npx --version
 # Install Yarm
 echo "Installing yarn"
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -137,7 +138,7 @@ echo "Installing Electronjs"
 npm install electron -g
 # Install ReactNative (Requires Nodejs)
 echo "Installing React-Native"
-sudo npm i -g create-react-app
+sudo npm install -g create-react-app
 npm install -g expo-cli
 # Install Redux (Requires Nodejs)
 echo "Installing redux"
